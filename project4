@@ -2,12 +2,12 @@
  class Company {
     var $name;
 
-    public function SetCompanyName($name)
+    public function SetCompanyName($name);
     {
      $this->name = $name;
     }
 
-    public function GetCompanyName()
+    public function GetCompanyName();
     {
         return $this->name;
     }
@@ -19,12 +19,12 @@
  class Departement {
     var $name;
 
-    public function SetDepartemantName($name)
+    public function SetDepartemantName($name);
     {
      $this->name = $name;
     }
 
-    public function GetDepartemantName()
+    public function GetDepartemantName();
     {
         return $this->name;
     }
@@ -51,27 +51,27 @@ class Employee {
     var $title;
     var $salary;
 
-    public function SetEmployeeName($name,$title,$salary)
+    public function SetEmployeeName($name,$title,$salary);
     {
      $this->name = $name;
      $this->title = $title;
      $this->salary = $salary;
     }
 
-    public function getEmployeeTitle($name,$title,$salary)
+    public function getEmployeeTitle($name,$title,$salary);
     {
      $this->name = $name;
      $this->title = $title;
      $this->salary = $salary;
     }
     
-    public function getEmployeeProfile($name,$title,$salary)
+    public function getEmployeeProfile($name,$title,$salary);
     {
      $this->name = $name;
      $this->title = $title;
      $this->salary = $salary;
     }
-    public function getEmployeeMonthlySalary($name,$title,$salary)
+    public function getEmployeeMonthlySalary($name,$title,$salary);
     {
      $this->name = $name;
      $this->title = $title;
