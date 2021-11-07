@@ -1,0 +1,81 @@
+<?php 
+ class Company {
+    var $name;
+
+    public function SetCompanyName($name)
+    {
+     $this->name = $name;
+    }
+
+    public function GetCompanyName()
+    {
+        return $this->name;
+    }
+    
+ }
+?>
+
+<?php 
+ class Departement {
+    var $name;
+
+    public function SetDepartemantName($name)
+    {
+     $this->name = $name;
+    }
+
+    public function GetDepartemantName()
+    {
+        return $this->name;
+    }
+    
+ }
+?>
+
+
+<?php
+    $company = new Company();
+    $departement = new Departement();
+    $company->SetCompanyName('metro');
+    echo $company->GetCompanyName();
+    echo "<hr>";
+
+    $departement->SetDepartemantName('IT');
+    echo $departement->GetDepartemantName();
+    echo "<hr>";
+?>
+
+
+class Employee {
+    var $name;
+    var $title;
+    var $salary;
+
+    public function SetEmployeeName($name,$title,$salary)
+    {
+     $this->name = $name;
+     $this->title = $title;
+     $this->salary = $salary;
+    }
+
+    public function getEmployeeTitle($name,$title,$salary)
+    {
+     $this->name = $name;
+     $this->title = $title;
+     $this->salary = $salary;
+    }
+    
+    public function getEmployeeProfile($name,$title,$salary)
+    {
+     $this->name = $name;
+     $this->title = $title;
+     $this->salary = $salary;
+    }
+    public function getEmployeeMonthlySalary($name,$title,$salary)
+    {
+     $this->name = $name;
+     $this->title = $title;
+     $this->salary = $salary;
+    }
+ }
+?>
